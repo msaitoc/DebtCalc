@@ -1,0 +1,48 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.topBar {
+   background-color:rgb(178, 242, 231);
+}
+
+
+.formBox label, .formBox input[type="text"]{
+    width:50px;
+    display: inline-block;
+    font-size:10px;
+    white-space:nowrap;
+}
+.formBox input[type="text"]{
+    background-color: rgba(47, 65, 62, 0.419);
+
+}   
+
+.formBox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.inputField {
+    flex-basis: calc(50% - 10px);
+    margin-bottom:20px;
+    margin-right:10px;
+
+}
+.formBox {
+    width: 250px;
+    background-color: rgb(168, 228, 143);
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 10px;
+ 
+}
+
+.formBox input{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.littleButton {
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Debt Calculator</title>
+    <link type="text/css" rel="stylesheet" href="medDebtStyle.css"/>
+</head>
+<body>
+    <div class="topBar">
+        <div class="topBar_Left">
+            <h1>  Debt Calculator!</h1>
+        </div>
+       <div class="topBar_Right">
+        <h4> about us</h4>
+       </div>
+    </div>
+    <div class="leftMenu">
+        <img src="LittlePlus.jpg" alt="add button" height="20" class="littleButton" onclick="addFormBox()"/> 
+        <div class="formSection">
+            <form class="formBox">
+                <div class="inputField">
+                    <label for ="name">  Period length (months):</label> <br>
+                    <input type="text" id="name" name="name" oninput="checkFields()"> <br>
+                </div>
+                <div class="inputField">
+                    <label for ="mPayment"> Monthly payment:</label> <br>
+                    <input type="text" id="mPayment" name="mPayment" oninput="checkFields()"> <br>
+                </div>   
+                <div class="inputField">
+                    <label for ="loan"> Loan amount:</label> <br>
+                    <input type="text" id="loan" name="loan" oninput="checkFields()"> <br>
+                </div>
+                <div class="inputField">
+                    <label for ="r"> Interest rate:</label> <br>
+                    <input type="text" id="r" name="r" oninput="checkFields()"> <br>     
+                </div>
+                <div class="formBoxNumber"> Time period number: 1</div>
+            </form>
+        </div>
+    </div>
+
+<script src="theActualCalc.js"></script>
+</body>
+</html>
